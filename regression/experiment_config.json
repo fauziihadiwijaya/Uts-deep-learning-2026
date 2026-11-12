@@ -1,0 +1,40 @@
+{
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "selected_architecture": "GRU",
+  "final_epochs": 23,
+  "window_size": 30,
+  "train_stride": 5,
+  "rul_cap": 150,
+  "selected_features": [
+    "setel_1",
+    "setel_2",
+    "setel_3",
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "s08",
+    "s09",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s17",
+    "s18",
+    "s19",
+    "s20",
+    "s21"
+  ],
+  "device": "cuda",
+  "torch_version": "2.14.1+cu130"
+}
