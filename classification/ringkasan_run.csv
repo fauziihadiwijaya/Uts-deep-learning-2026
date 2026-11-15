@@ -1,0 +1,17 @@
+run,config,f1,f1_A,f1_B,f1_mix,acc,minutes
+base_image,image | ce | global | seed 0 | 30 ep,0.6666,0.7076,0.536,0.6074,0.7722,3.0187
+base_sensor,sensor | ce | global | seed 0 | 30 ep,0.4579,0.4762,0.4019,0.4321,0.554,0.8221
+base_concat,concat | ce | global | seed 0 | 30 ep,0.8528,0.8846,0.7543,0.8075,0.8719,3.7039
+base_late,late | ce | global | seed 0 | 30 ep,0.8392,0.8769,0.7214,0.7853,0.8631,3.7019
+base_xattn,xattn | ce | global | seed 0 | 30 ep,0.8528,0.8874,0.7447,0.8034,0.8775,4.503
+oof0_concat,concat | ce | global | seed 0 | 12 ep,0.7802,0.8204,0.6475,0.7212,0.8261,1.2744
+oof1_concat,concat | ce | global | seed 0 | 12 ep,0.7882,0.8267,0.6538,0.7298,0.83,1.2768
+oof2_concat,concat | ce | global | seed 0 | 12 ep,0.7854,0.8266,0.6426,0.7229,0.8298,1.2771
+noise_ls_concat,concat | ls | global | seed 0 | 30 ep,0.8571,0.8922,0.749,0.8073,0.8757,3.7194
+noise_gce_concat,concat | gce | global | seed 0 | 30 ep,0.8595,0.8921,0.7569,0.8127,0.8782,3.7849
+dom_line_concat,concat | ce | line | seed 0 | 30 ep,0.843,0.8807,0.7271,0.7895,0.865,3.7221
+dom_linew_concat,concat | ce | line +w | seed 0 | 30 ep,0.8317,0.8657,0.7285,0.7839,0.8562,3.7166
+nodrop_concat,concat | ce | global | seed 0 | 30 ep,0.8292,0.8682,0.7061,0.773,0.854,3.7086
+final_s0,concat | gce | global | seed 0 | 30 ep,0.8595,0.8921,0.7569,0.8127,0.8782,3.7055
+final_s1,concat | gce | global | seed 1 | 30 ep,0.8523,0.8851,0.7476,0.8048,0.8728,3.7399
+final_s2,concat | gce | global | seed 2 | 30 ep,0.8594,0.8945,0.7493,0.8091,0.8778,3.7153
