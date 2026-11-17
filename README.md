@@ -76,8 +76,8 @@ uts-deep-learning-2026/
 
 | No. | Name | Student ID |
 |---|---|---|
-| 1 | [Member 1] | [Student ID] |
-| 2 | [Member 2] | [Student ID] |
+| 1 | Mohamad Faisal Bashir | 1010323000 |
+| 2 | Mohammad Fauzi Hadiwijaya | 101032300044 |
 
 ## Collaboration
 
