@@ -1,0 +1,20 @@
+{
+  "task": "Task 3 - Spectrum Representation and Encoder",
+  "method": "1D-CNN Convolutional Autoencoder",
+  "n_samples": 36000,
+  "input_features_original": 128,
+  "input_features_after_preprocessing": 128,
+  "latent_dim": 32,
+  "best_validation_epoch": 57,
+  "best_validation_mse": 0.018614682701450808,
+  "validation_reconstruction_mae": 0.09290218353271484,
+  "seed": 42,
+  "batch_size": 256,
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05,
+  "final_training_epochs": 57,
+  "microscope_counts": {
+    "M1": 21636,
+    "M2": 14364
+  }
+}
