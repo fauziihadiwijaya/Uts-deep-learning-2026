@@ -1,0 +1,56 @@
+{
+  "task": "Task 3 - Image Representation and Encoder",
+  "method": "SimCLR (NT-Xent) dengan CNN ResNet kecil, embedding dari backbone + TTA dihedral 8 arah",
+  "n_samples": 36000,
+  "embedding_dim": 256,
+  "epochs": 100,
+  "batch_size": 512,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "temperature": 0.2,
+  "seed": 42,
+  "augmentations": {
+    "rotation_deg": [
+      0,
+      360
+    ],
+    "flip": true,
+    "scale": [
+      0.75,
+      1.33
+    ],
+    "gamma": [
+      0.7,
+      1.4
+    ],
+    "blur_sigma": [
+      0.0,
+      1.2
+    ],
+    "noise_std": 0.04,
+    "per_image_standardization": true
+  },
+  "final_val_loss": 2.9919281005859375,
+  "final_val_pos_acc": 0.8915277777777778,
+  "representation_check": [
+    {
+      "representasi": "PCA piksel (baseline)",
+      "dim": 64,
+      "pos_cos": 0.03449999913573265,
+      "neg_cos": -0.009999999776482582,
+      "gap": 0.04439999908208847,
+      "retrieval_top1": 0.019,
+      "bocor_mikroskop": 0.4982
+    },
+    {
+      "representasi": "SimCLR (deep)",
+      "dim": 256,
+      "pos_cos": 0.8729000091552734,
+      "neg_cos": 0.002199999988079071,
+      "gap": 0.8707000017166138,
+      "retrieval_top1": 0.663,
+      "bocor_mikroskop": 0.8671
+    }
+  ],
+  "torch": "2.14.1+cu130"
+}
