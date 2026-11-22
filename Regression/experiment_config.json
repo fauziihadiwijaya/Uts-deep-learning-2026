@@ -1,0 +1,68 @@
+{
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "selected_architecture": "GRU",
+  "final_epochs": 23,
+  "window_size": 30,
+  "train_stride": 5,
+  "batch_size": 256,
+  "learning_rate": 0.001,
+  "hidden_size": 64,
+  "dropout": 0.2,
+  "rul_cap": 150,
+  "selected_features": [
+    "setel_1",
+    "setel_2",
+    "setel_3",
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "s08",
+    "s09",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s17",
+    "s18",
+    "s19",
+    "s20",
+    "s21"
+  ],
+  "device": "cuda",
+  "environment": {
+    "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "matplotlib": "3.10.0",
+    "pytorch": "2.14.1+cu130",
+    "cuda_available": true,
+    "device": "cuda",
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "gpu": "Tesla T4"
+  },
+  "prediction_interval": {
+    "method": "three-seed GRU ensemble + absolute validation residual calibration",
+    "nominal_level": 0.9,
+    "calibration_quantile": 38.999427795410156,
+    "validation_diagnostic_coverage": 0.9055555555555556,
+    "validation_mean_width": 61.089393615722656,
+    "note": "Validation is also used for architecture/epoch selection; coverage is a diagnostic, not an independent conformal guarantee."
+  }
+}
