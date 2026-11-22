@@ -1,0 +1,89 @@
+{
+  "K_FINAL": 6,
+  "k_terbaik_per_kriteria": {
+    "silhouette": 6,
+    "calinski_harabasz": 4,
+    "davies_bouldin": 5,
+    "bic": 15
+  },
+  "FINAL_METHOD": "KMeans",
+  "metode": [
+    {
+      "metode": "KMeans",
+      "n_cluster": 6.0,
+      "silhouette": 0.2514,
+      "calinski_harabasz": 5988.2275,
+      "davies_bouldin": 1.6047,
+      "cramers_v_mikroskop": 0.0096,
+      "cluster_terkecil": 0.1016,
+      "cluster_terbesar": 0.279,
+      "stabilitas": 1.0
+    },
+    {
+      "metode": "GMM",
+      "n_cluster": 6.0,
+      "silhouette": 0.2514,
+      "calinski_harabasz": 5988.0708,
+      "davies_bouldin": 1.6048,
+      "cramers_v_mikroskop": 0.0096,
+      "cluster_terkecil": 0.1016,
+      "cluster_terbesar": 0.279,
+      "stabilitas": 0.8586
+    },
+    {
+      "metode": "DEC",
+      "n_cluster": 6.0,
+      "silhouette": 0.2514,
+      "calinski_harabasz": 5985.4375,
+      "davies_bouldin": 1.6056,
+      "cramers_v_mikroskop": 0.0096,
+      "cluster_terkecil": 0.1016,
+      "cluster_terbesar": 0.279,
+      "stabilitas": 0.999
+    }
+  ],
+  "single_modality": [
+    {
+      "ruang": "image",
+      "ARI vs cluster final": 0.9995,
+      "silhouette cluster final di ruang ini": 0.3776
+    },
+    {
+      "ruang": "spectrum",
+      "ARI vs cluster final": 0.4589,
+      "silhouette cluster final di ruang ini": 0.0777
+    },
+    {
+      "ruang": "fused",
+      "ARI vs cluster final": 1.0,
+      "silhouette cluster final di ruang ini": 0.2514
+    }
+  ],
+  "koreksi_mikroskop": [
+    {
+      "modalitas": "image",
+      "bocor_mikroskop_awal": 0.867,
+      "dikoreksi": true,
+      "bocor_mikroskop_akhir": 0.498
+    },
+    {
+      "modalitas": "spectrum",
+      "bocor_mikroskop_awal": 0.4991,
+      "dikoreksi": false,
+      "bocor_mikroskop_akhir": 0.4991
+    }
+  ],
+  "fusion": {
+    "fuse_dim": 16,
+    "w_img": 1.0,
+    "w_spec": 1.0,
+    "image_file": "/content/drive/MyDrive/UTS_DL/hasil_tugas3/image_encoder_artifacts/image_embeddings.csv.gz",
+    "spectrum_file": "/content/drive/MyDrive/UTS_DL/hasil_tugas3/spectrum_encoder_artifacts/spectrum_embeddings.csv"
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "seed": 42
+}
